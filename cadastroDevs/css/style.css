@@ -1,0 +1,147 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+
+}
+
+.container{
+    position: absolute;
+    width: 400px;
+}
+.techAdded{
+    position: absolute;
+    right: -10px;
+}
+.containerAll{
+    z-index: 2;
+    height: 100vh;
+    width: 100vw;
+}
+ul.ulList{
+    font-weight: bold;
+    border: 2px solid black;
+    padding: 0;
+    background-color: rgb(205, 214, 224);
+    right:50px; 
+    top:0;
+    font-size: large;
+    border-radius: 15px;
+}
+li.liList{
+    margin-bottom: 5px;
+}
+.testLi{
+    font-weight:600;
+    border: 0px solid;
+    border-radius: 15px;
+    padding-left: 5px;
+    font-size: medium;
+    position: relative;
+    padding-bottom: 15px;
+    list-style: none;
+    background-color: rgb(190, 245, 190);
+}
+ul.ul{
+    position:relative;
+    right: -40px;
+    top:0;
+}
+.remove{
+    width: 25px;
+    align-items: center;
+    border: 2px solid black;
+    border-radius: 15px;
+    color: red;
+    position:absolute;
+    right: -20px;
+    top:-14px;
+    
+}
+.remove:hover{
+    cursor: pointer;
+    background-color: rgb(230, 230, 230);
+}
+input[type=text]{
+    width: 190px;
+    border: 1px solid;
+    border-radius: 15px;
+    
+}
+input[type=text]:hover{
+    
+    background-color: rgb(204, 204, 204);
+}
+.containerDevs.show{
+    background-color:rgba(0,0,0,.5);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 2000;
+    top:0;
+    left: 0;
+}
+@keyframes showdevs{
+    from{
+        opacity: 0;
+        transform: translate3d(90px, 0, 0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0,0 );
+    }
+}
+
+input[type="text"].show{
+    background-color:rgba(114, 112, 112, 0.5);
+}
+input[type="button"].show{
+    background-color:rgba(114, 112, 112, 0.5);
+}
+
+.test.show{
+    display: flex;
+    flex-direction: column;
+}
+.show .test {
+    animation: showdevs.3s;
+}
+.test{
+    display: none;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    width: 300px;
+    height: 300px;
+    height: 100vh;
+    background-color: rgb(235, 235, 235);
+}
+
+.devs{
+
+    margin-left: 80px;
+    position: relative;
+    right:50px; 
+    top:0;
+    width: 250px;
+   
+}
+#closeButtonDevs{
+    cursor: pointer;
+    position: absolute;
+    top:0;
+    right: 0;
+    border-radius: 15px;
+    width: 40px;
+    color: red;
+
+}
+.showButton{
+    text-decoration: underline;
+    font-weight: 500;
+    background-color: transparent;
+    border: 0px;
+    cursor: pointer;
+    position:relative;
+    top: -50px;
+    left:280px;
+}
